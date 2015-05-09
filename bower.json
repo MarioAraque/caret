@@ -8,6 +8,7 @@
   "devDependencies": {
     "seiyria-bootstrap-slider": "~4.8.1",
     "bootstrapcolorpicker": "~2.1.1",
-    "bootstrap-combobox": "~1.1.6"
+    "bootstrap-combobox": "~1.1.6",
+    "font-awesome": "~4.3.0"
   }
 }
