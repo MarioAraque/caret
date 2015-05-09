@@ -10,6 +10,9 @@
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
+    <link rel="stylesheet" href="/bower_components/bootstrap-combobox/css/bootstrap-combobox.css">
+    <link rel="stylesheet" href="/bower_components/seiyria-bootstrap-slider/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="/bower_components/bootstrapcolorpicker/dist/css/bootstrap-colorpicker.css">
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
@@ -26,9 +29,69 @@
     <![endif]-->
 
     <div class="container">
-      <div class="header">
-        <h3 class="text-muted">caret</h3>
+      <div class="jumbotron">
+        <h1>Caret</h1>
+        <p class="lead">Create a custom caret for your website.</p>  
       </div>
+      <div class="main">
+        <div class="col-lg-8">
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="col-lg-12">
+                <p><strong>Caret width:</strong> <span class="caret-width">50</span>px</p>
+                <div>
+                  <input class="range hide width" data-slider-id='width' type="text" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="50"/>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p><strong>Border width:</strong> <span class="caret-border-width">1</span>px</p>
+                <div>
+                  <input class="range hide border" data-slider-id='border' type="text" data-slider-min="1" data-slider-max="100" data-slider-step="1" data-slider-value="1"/>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <strong>Color:</strong> <span class="color"></span>              
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <strong>Background color:</strong> <span class="background" data-color="#F8F8F8"></span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p><strong>Direction:</strong></p>
+                <select name="direction" class="direction">
+                  <option value="bottom">Bottom</option>
+                  <option value="top">Top</option>
+                  <option value="right">Right</option>
+                  <option value="left">Left</option>
+                </select>                          
+              </div>
+            </div>  
+          </div>
+          <div class="col-lg-7">
+            <div class="row code code-html">
+              <p class="code-title">HTML</p>
+              <pre class="code-content"></pre>
+            </div>
+            <div class="row code code-css">
+              <p class="code-title">CSS</p>
+              <pre class="code-content"></pre>
+            </div> 
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="preview">
+            <div class="preview-container">
+              <span class="preview-before"></span><span class="preview-after"></span>
+            </div>
+          </div>  
+        </div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -48,18 +111,15 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
     <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
     <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
     <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
     <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
     <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
+    <script src="/bower_components/bootstrapcolorpicker/dist/js/bootstrap-colorpicker.js"></script>
+    <script src="/bower_components/bootstrap-combobox/js/bootstrap-combobox.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->

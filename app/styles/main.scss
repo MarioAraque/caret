@@ -1,3 +1,5 @@
+@import "variables";
+
 $icon-font-path: '../fonts/';
 
 // bower:scss
@@ -14,15 +16,44 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background: $body-background;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+.row {
+  margin-bottom: $rows-space;
+}
 
-  .header {
-    margin-bottom: 30px;
+.direction {
+	width: 100%;
+	line-height: 25px;
+}
+
+.combobox-container .input-group {
+	width: 50%;
+}
+
+.preview {
+  position: relative;
+  height: 120px;
+  margin-top: 30px;
+  margin-left: 20px;
+
+  span {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
   }
+}
+
+.color,
+.background {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  box-shadow: 0 0 1em #aaa;
+  margin-left: 5px;
+  position: relative;
+  top: 4px;
+  cursor: pointer;
 }
