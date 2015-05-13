@@ -3,12 +3,10 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
-    "modernizr": "~2.8.1"
-  },
-  "devDependencies": {
+    "modernizr": "~2.8.1",
+    "font-awesome": "~4.3.0",
     "seiyria-bootstrap-slider": "~4.8.1",
     "bootstrapcolorpicker": "~2.1.1",
-    "bootstrap-combobox": "~1.1.6",
-    "font-awesome": "~4.3.0"
+    "bootstrap-combobox": "~1.1.6"
   }
 }
